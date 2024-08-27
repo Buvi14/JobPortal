@@ -3,15 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
-import companies from '../data/companies.json';
 import Autoplay from 'embla-carousel-autoplay';
+import companies from '../data/companies.json';
+import faqs from '../data/faqs.json';
 import {
   Card, CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Landing = () => {
   return (
@@ -46,8 +46,9 @@ const Landing = () => {
           </CarouselContent>
         </Carousel>
       </section>
-      <section className="flex ">
-        <Card className="">
+      <img src="/banner.jpeg" className="w-full" alt="banner-image" />
+      <section className="flex w-full gap-2 sm:gap-4">
+        <Card className="grow">
           <CardHeader>
             <CardTitle>For Job Seekers</CardTitle>
           </CardHeader>
@@ -55,7 +56,7 @@ const Landing = () => {
             Search and apply for jobs, track applications and more...
           </CardContent>
         </Card>
-        <Card className="">
+        <Card className="grow">
           <CardHeader>
             <CardTitle>For Employers</CardTitle>
           </CardHeader>
@@ -63,6 +64,22 @@ const Landing = () => {
             Post Jobs, manage applications and find the best candidates.
           </CardContent>
         </Card>
+      </section>
+      <section>
+        <Accordion type="single" collapsible>
+          {faqs.map((faq, index) => {
+            return (
+
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            );
+          })}
+        </Accordion>
+
       </section>
     </main>
   );
