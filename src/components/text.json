@@ -1,0 +1,25 @@
+[{
+        "img": "x_snc_nl_lxp.expert_cax.png",
+        "type": "CAX",
+        "title": "Architecture Excellence (ArchX)",
+        "description": "Architecture Excellence (ArchX) is a cohort-based learning program focused on developing the skills and knowledge needed to excel as an architect in the ServiceNow ecosystem."
+    },
+    {
+        "img": "x_snc_nl_lxp.expert_cwa.png",
+        "type": "CWS",
+        "title": "Certified Workflow Architect (CWA)",
+        "description": "Elevate the skills of expert implementers and architects in architectural excellence for Customer and Industry Workflows."
+    },
+    {
+        "img": "x_snc_nl_lxp.expert_cta.png",
+        "type": "CTA",
+        "title": "Certified Technical Architect (CTA)",
+        "description": "Enhance technical proficiency in ServiceNow architecture, design, integration, security, and governance, preparing candidates to lead technical discussions and tackle challenges."
+    },
+    {
+        "img": "x_snc_nl_lxp.expert_cma.png",
+        "type": "CMA",
+        "title": "Certified Master Architect (CMA)",
+        "description": "Focuse on strategic leadership, executive communication, and aligning technology solutions with business objectives, preparing candidates to lead transformative initiatives."
+    }
+]
